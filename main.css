@@ -1,0 +1,549 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header-container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container div {
+    width: 100%;
+}
+#logo {
+    width: 200px;
+    max-height: 100%;
+}
+.logo {
+    flex-basis: 20%;
+    margin-right: 20px;
+}
+#search {
+    flex-basis: 40%;
+    padding: 20px 0;
+}
+#search form {
+    display: flex;
+    margin: 0 auto;
+}
+#search form input {
+    flex-basis: 85%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #444;
+    border-radius: 10px 0 0 10px;
+}
+#search form button {
+    flex-basis: 15%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #444;
+    border-radius: 0 10px 10px 0;
+    margin-left: 1px;
+    background: rgb(139, 68, 0);
+    color: #fff;
+}
+.small-nav {
+    flex-basis: 30%;
+}
+.small-nav ul {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.small-nav ul a {
+    text-decoration: none;
+    padding: 0 15px;
+    color: #444;
+    text-align: center;
+}
+.small-nav ul a:hover i, .small-nav ul a:hover {
+    color: blue;
+}
+.small-nav ul a i {
+    margin-right: 10px;
+    color: #555;
+}
+.small-nav ul a li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.menu {
+    display: none;
+}
+nav {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav ul a {
+    text-decoration: none;
+    color: #444;
+}
+nav ul a:hover {
+    color: blue;
+}
+nav ul a li {
+    list-style: none;
+}
+
+.below-nav {
+    width: 99%;
+    background: rgba(22, 1, 114, 0.918);
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.below-nav h4 {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: 100;
+}
+.wallpaper {
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.img {
+    /* margin-right: 10px; */
+    position: relative;
+    
+    flex: 2;
+    background: url(images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.message {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.message h3 {
+    color: rgb(22, 1, 114);
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+.message h4 {
+    color: rgb(22, 1, 114);
+    padding: 5px;
+    text-align: center;
+    font-weight: 100;
+    margin: 5px;
+}
+.message button {
+    color: #fff;
+    padding: 10px 20px;
+    background: rgb(22, 1, 114);
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+}
+.img-sidebar {
+    
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.img-sidebar div {
+    width: 100%;
+    margin: 2px;
+}
+
+.img-sidebar-1 {
+    flex: 1;
+    background: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.img-sidebar-2 {
+    flex: 1;
+    background: #ddd;
+    background-position: center;
+    background-size: cover;
+}
+.message-1 {
+    padding: 10px;
+    background-color: rgba(22, 1, 114, 0.3);
+}
+.message-1 h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+.message-1 h4 {
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+.message-1 button {
+    color: #fff;
+    padding: 10px 80px;
+    background: rgb(22, 1, 114);
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+}
+.message-2 h1 {
+    color: rgba(22, 1, 114, 0.918);
+    text-align: center;
+    letter-spacing: 3px;
+}
+.message-2 p {
+    color: rgba(22, 1, 114, 0.918);
+    text-align: center;
+    margin: 10px;
+}
+
+.message-2 button {
+    color: #fff;
+    padding: 10px 80px;
+    background: rgb(22, 1, 114);
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+}
+
+.update {
+    width: 99%;
+    margin: 0 auto;
+    background: #ddd;
+    margin-bottom: 30px;
+}
+.update p {
+    padding: 10px;
+    text-align: center;
+}
+.feature-categories {
+    margin-bottom: 150px;
+}
+
+.feature-categories h1 {
+    color: #777;
+    text-align: center;
+    font-weight: 100;
+}
+
+.container-div {
+    display: flex;
+    width: 99%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.container-div div {
+    display: block;
+    margin: 0 auto;
+}
+.container-div a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #444444;
+}
+.top-offer {
+    display: flex;
+    overflow: hidden;
+    width: 2592px;
+}
+.top-offer div {
+    height: 30vh;
+    margin-right: 5px;
+}
+.first {
+    background: url(images/nineth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.second {
+    background: url(images/seventh.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.third {
+    background: url(images/twelveth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.feature-product {
+    margin-bottom: 150px;
+}
+.feature-product h2 {
+    text-align: center;
+    color: #777;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 99%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.wrapper div {
+    width: 100%;
+}
+.wrapper div img {
+    height: 30vh;
+    width: 99%;
+    display: block;
+    margin-bottom: 20px;
+}
+.wrapper div p {
+    color: #333;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.feature-product .wrapper button {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: 1px solid #444;
+    border-radius: 2px;
+    padding: 10px 40px;
+    color: #000;
+    background: none;
+    transition: background 300ms;
+}
+.feature-product .wrapper button:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 99%;
+    margin-bottom: 150px;
+}
+.icons div {
+    text-align: center;
+    border-right: solid rgb(230, 228, 228) 0.5px;
+}
+.icons div:last-child {
+    border-right: none;
+}
+.icons div i {
+    font-size: 40px;
+    color: #333;
+    padding-top: 10px;
+}
+.icons div h3 {
+    font-weight: 100;
+    color: #555;
+    padding: 20px;
+}
+.icons div p {
+    color: #777;
+    line-height: 1.5em;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 10px;
+}
+.icons div button {
+    padding: 8px 20px;
+    border: none;
+    color: #333;
+    background: #ccc;
+    transition: 80ms background ease-in-out;
+}
+.icons div button:hover {
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-line {
+    margin-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    width: 99%;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: #111;
+}
+
+.footer div:nth-child(1) {
+    flex: 3;
+}
+.footer div:nth-child(2), .footer div:nth-child(3), .footer div:nth-child(4) {
+    flex: 1;
+}
+.footer div h3 {
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.footer div .wrapper {
+    margin-left: 10px;
+}
+.footer div .wrapper ul a {
+    display: block;
+    width: 100%;
+    color: #999;
+    padding: 10px 0;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.footer div .wrapper ul a:hover {
+    color: #fff;
+}
+.footer div .wrapper ul a i {
+    font-size: 20px;
+    color: rgb(212, 209, 209);
+    display: inline;
+    margin-right: 10px;
+}
+.footer div .wrapper ul a li {
+    display: inline;
+}
+.footer div .wrapper ul p {
+    padding: 10px 0;
+    color: #777;
+    margin-left: 20px;
+}
+.footer div .wrapper ul li input, .footer div .wrapper ul li button {
+    margin: 2px 0;
+    padding: 5px;
+    outline: none;
+    border: rgb(182, 181, 181) solid 1px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.footer div .wrapper ul li input {
+    margin-left: 20px;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .header-container {
+        margin: 20px;
+        display: block;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        left: 20px;
+        padding: 5px;
+    }
+    #menu {
+        height: 15px;
+    }
+    .small-nav ul a li {
+        display: none;
+    }
+    .small-nav ul {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .small-nav ul a i {
+        font-size: 23px;
+    }
+    #logo {
+        width: 100px;
+        max-height: 48%;
+    }
+    .logo img {
+        margin-left: 50px;
+    }
+    nav {
+        display: none;
+    }
+    .nav-expanded {
+        display: block;
+    }
+    nav ul {
+        display: block;
+    }
+    nav ul a {
+        text-decoration: none;
+        color: #444;
+    }
+    nav ul a li {
+        list-style: none;
+        padding: 5px;
+        padding-left: 30px;
+    }
+    nav ul a li:hover {
+        color: #fff;
+        background: black;
+    }
+    .wallpaper {
+        width: 99%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+    .wallpaper {
+        margin-bottom: 10px;
+    }
+    .wallpaper div {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 10px 50px;
+    }
+    .container-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .container-div img {
+        width: 170px;
+        margin: 0 auto;
+    }
+    .img {
+        height: 200px;
+    }
+    .message h3 {
+        font-size: large;
+    }
+    .wrapper {
+        display: block;
+        overflow: hidden;
+        width: 99%;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .feature-product .wrapper button {
+        margin-bottom: 60px;
+    }
+    .icons {
+        display: block;
+        width: 99%;
+    }
+}
+
